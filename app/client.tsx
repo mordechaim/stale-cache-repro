@@ -21,9 +21,7 @@ export function Client(props: ClientProps) {
     <div>
       <span>{number}</span>
       <br />
-      <button onClick={handleIncrement} disabled={pending}>
-        Increment
-      </button>
+      <button onClick={handleIncrement}>Increment</button>
     </div>
   );
 }

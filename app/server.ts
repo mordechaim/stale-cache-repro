@@ -14,6 +14,7 @@ export const getNumber = async () => {
 export const increment = async () => {
   const num = await getNumber();
   number = num + 1;
+  await new Promise(res => setTimeout(() => res(null), 1000))
 
   revalidateTag('number');
 };
